@@ -19,7 +19,7 @@ Resumiendo, se busca
 
 <h3>Solución</h3>
 
-Utilicé únicamente los comandos disponibles en el intérprete de comandos bash en un sistema linux debian. La única limitación encontrada fue la imposibilidad obtener resultados no enteros en divisiones. Por está razón, instalé bc (bash calculator). <br><br>
+Utilicé únicamente los comandos disponibles en el intérprete de comandos bash en un sistema linux debian. La única limitación que encontré fue la imposibilidad de obtener resultados no enteros en divisiones. Por está razón, instalé bc (bash calculator). <br><br>
 <code>apt-get install bc</code> <br><br>
 Probé el script en sistemas ubuntu y derivados, mint, y bc ya forma parte de la instalación de los mismos.
 
