@@ -30,8 +30,6 @@ Para ejecutar el script basta con otorgarle permisos de ejecución haciendo<br><
 
 y luego
 
-<br>
 <code> ./queueTheorySimuation.sh </code>
-<br>
 
-Luego introducir la cantidad de clientes que se desean utilizar en la simulación, llamemosla n, Se generaran dos arrays con n enteros aleatorios normalmente distribuidos cada uno. El primero con valores [1..10] y el segundo con valores [1..6].  
+Finalmente, se pide por pantalla introducir la cantidad de clientes que se desean utilizar en la simulación, llamemosla n, Se generaran dos arrays con n enteros aleatorios normalmente distribuidos cada uno. El primero con valores [1..10] y el segundo con valores [1..6].  
