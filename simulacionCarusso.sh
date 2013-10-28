@@ -3,7 +3,6 @@
 
 ###############################################
 # Author: Nicolas Carusso                     #
-# Author's email: ncarusso at gmail dot com   #
 # Date: 10/15/2013                            #
 ###############################################
 
