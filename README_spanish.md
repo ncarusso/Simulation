@@ -1,6 +1,6 @@
 <h1>Simulacion de Teoría de colas</h1>
 
-queueTheorySimuation es un script de bash que implementa la solución al ejemplo de teoría de colas planteado en la página 13 del libro <cite>"Simulación de Sistemas de Robert Shannon (1975)"  </cite>
+queueTheorySimulation es un script de bash que implementa la solución al ejemplo de teoría de colas planteado en la página 13 del libro <cite>"Simulación de Sistemas de Robert Shannon (1975)"  </cite>
 
 
 <h3>Ejemplo propuesto</h3>
@@ -26,6 +26,6 @@ Probé el script en sistemas ubuntu y derivados, mint, y bc ya forma parte de la
 <h3>Ejecución</h3>
 
 Para ejecutar el script basta con otorgarle permisos de ejecución haciendo<br>
-<code>chmod +x queueTheorySimuation.sh</code>
+<code>chmod +x queueTheorySimulation.sh</code>
 
 Luego introducir la cantidad de clientes que se desean utilizar en la simulación, llamemosla n, Se generaran dos arrays con n enteros aleatorios normalmente distribuidos cada uno. El primero con valores [1..10] y el segundo con valores [1..6].  
