@@ -12,28 +12,37 @@ spends in the system (both waiting and being serviced) and the percentage of tim
 occupied with work.
 
 
-Resumiendo, se busca
+In brief, we are looking for:
 
 <ul>
-<b>i</b>. Tiempo promedio de un cliente en la cola de un sistema.
+<b>i</b> Average time a customer spends in the system
 </ul>
 <ul>
-<b>ii</b>. % de tiempo que el cajero esta desocupado.
+<b>ii</b>. % of time that the check-out clerk is not occupied with work.
+
 </ul>
 
-<h3>Solución</h3>
+<h3>Solution</h3>
 
-Utilicé únicamente los comandos disponibles en el intérprete de comandos bash en un sistema linux debian. La única limitación que encontré fue la imposibilidad de obtener resultados no enteros en divisiones. Por está razón, instalé bc (bash calculator). <br><br>
+I have only used the commands available in the BASH command interpreter in a linux debian system. 
+Nevertheless, I have found a limitation while trying to obtain non-integer values in a division operation.
+For this reason, I have installed bash calculator.<br><br>
+
 <code>apt-get install bc</code> <br><br>
-Probé el script en sistemas ubuntu y derivados, mint, y bc ya forma parte de la instalación de los mismos.
 
-<h3>Ejecución</h3>
+I have tested the script in ubuntu and derivatives (such as mint) and I have noticed that bc is already installed
+on them.
 
-Para ejecutar el script basta con otorgarle permisos de ejecución haciendo<br><br>
+<h3>Run</h3>
+
+To run the script you must grant execution permissions to the user by doing<br><br>
+
 <code>chmod +x queueTheorySimulation.sh</code><br>
 
-y luego
+and then
 
 <code> ./queueTheorySimulation.sh </code>
 
-Finalmente, se pide por pantalla introducir la cantidad de clientes que se desean utilizar en la simulación, llamemosla n, Se generaran dos arrays con n enteros aleatorios normalmente distribuidos cada uno. El primero con valores [1..10] y el segundo con valores [1..6].  
+Finally, you need to enter the amount of customers to be used in the simulation, for instance, n.
+Two arrays with n random integers each will be generated. The first one is time between arrivals of the customers [1..10] and the second represents the time required to service each customer [1..6].
+
