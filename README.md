@@ -26,16 +26,16 @@ In brief, we are looking for:
 
 I have only used the commands available in the BASH command interpreter in a linux debian system. 
 Nevertheless, I have found a limitation while trying to obtain non-integer values in a division operation.
-For this reason, I have installed bash calculator.<br><br>
+For this reason, I have installed bash calculator.<br>
 
-<code>apt-get install bc</code> <br><br>
+<code>apt-get install bc</code> <br>
 
 I have tested the script in ubuntu and derivatives (such as mint) and I have noticed that bc is already installed
 on them.
 
 <h3>Run</h3>
 
-To run the script you must grant execution permissions to the user by doing<br><br>
+To run the script you must grant execution permissions to the user by doing<br>
 
 <code>chmod +x queueTheorySimulation.sh</code><br>
 
