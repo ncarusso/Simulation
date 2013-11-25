@@ -1,6 +1,6 @@
 <h1>Queuing Theory Simulaton</h1>
 
-queueTheorySimulation is a bash script that implements the solution of the queuing theory example proposed in pages 3 and 4 of the book <cite>"Systems Simulation: The Art and Science by Robert Shannon (1975) </cite> 
+queueTheorySimulation is a bash script that implements the solution of the queuing theory example proposed in pages 3 and 4 of the book <cite>"Systems Simulation: The Art and Science" by Robert Shannon (1975)</cite> 
 
 <h3>Proposed example</h3>
 
