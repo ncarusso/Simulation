@@ -1,11 +1,9 @@
-<h1>Queue Theory Simulaton</h1>
+<h1>Queuing Theory Simulaton</h1>
 
-queueTheorySimulation es un script de bash que implementa la solución al ejemplo de teoría de colas planteado en la página 13 del libro <cite>"Simulación de Sistemas de Robert Shannon (1975)"  </cite>
-
+queueTheorySimulation is a bash script that implements the solution of the queuing theory example proposed in pages 3 and 4 of the book <cite>"Systems Simulation: The Art and Science by Robert Shannon (1975) </cite> 
 
 <h3>Proposed example</h3>
 
-El ejemplo en cuestión plantea lo siguiente:<br>
 Consider a single-channel queueing (waiting line) system such as a checkout stand at a small gift shop. Assume that
 the time between arrivals of the customers is uniformly distributed from 1 through 10 minutes (for simplicity we
 round off all times to the nearest whole minute). Let us assume further that the amount of time required to service
