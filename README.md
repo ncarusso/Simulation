@@ -1,13 +1,19 @@
-<h1>Simulacion de Teoría de colas</h1>
+<h1>Queue Theory Simulaton</h1>
 
 queueTheorySimulation es un script de bash que implementa la solución al ejemplo de teoría de colas planteado en la página 13 del libro <cite>"Simulación de Sistemas de Robert Shannon (1975)"  </cite>
 
 
-<h3>Ejemplo propuesto</h3>
+<h3>Proposed example</h3>
 
 El ejemplo en cuestión plantea lo siguiente:<br>
-Consideremos un sistema de formación de colas de un sólo canal (línea de espera) tal como el de una caja registradora en una pequeña tienda de regalos. Supongamos que el tiempo entre llegada de los clientes está uniformemente distribuido de 1 a 10 minutos (por simplicidad redondearemos todos los tiempos al minuto total más cercano). Además, supongamos que el tiempo para atender a cada clientes está uniformemente distribuido de 1 a 6 minutos. Estamos interesados en el tiempo promedio que un cliente permanece dentro del sistemas (el tiempo que transcurre cuando está esperando y mientras se lo atiende) y el porcentaje de tiempo que el cajero estás desocupado.
- 
+Consider a single-channel queueing (waiting line) system such as a checkout stand at a small gift shop. Assume that
+the time between arrivals of the customers is uniformly distributed from 1 through 10 minutes (for simplicity we
+round off all times to the nearest whole minute). Let us assume further that the amount of time required to service
+each customer is uniformly distributed from 1 through 6 minutes. We are interested in the average time a customer
+spends in the system (both waiting and being serviced) and the percentage of time that the check-out clerk is not
+occupied with work.
+
+
 Resumiendo, se busca
 
 <ul>
