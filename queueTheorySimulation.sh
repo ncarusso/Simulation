@@ -3,7 +3,8 @@
 
 ###############################################
 # Author: Nicolas Carusso                     #
-# Date: 10/15/2013                            #
+# Author's email: ncarusso at gmail dot com   #
+# Date: 28/02/2014                            #
 ###############################################
 
 
@@ -26,24 +27,20 @@ COMENTARIO1
 
 
 
-#Comienzo a escribir el código
+#################################
+#################################
+#Funcion linuxRandom
+#################################
+#################################
+#genera los numeros aleatorios a partir con el PRNG de linux
+####################################################################################
+###################################################################################
 
-
-####################
-# Ingreso CLIENTES
-####################
-
-echo -n "Ingrese la cantidad de clientes que sea utilizar en la simulacion: ";
-read cliente
-
-######################################################
-# Genero TIEMPO DE LLEGADA entre los Clientes [1,10]
-######################################################
 
 <<COMENTARIO2
-		Utilizo la funcio interna de bash RANDOM para generar los valores aleatorios uniformemente distribuidos
-		para el tiempo de llegada entre los clientes y para el tiempo de atencion. Almaceno estos valores en respectivos
-		arrays cuyas longitudes son iguales a la cantidad de clientes
+        Utilizo la funcion interna de bash RANDOM para generar los valores pseudoaleatorios (uniformemente distribuidos?)
+        para el tiempo de llegada entre los clientes y para el tiempo de atencion. Almaceno estos valores en respectivos
+        arrays cuyas longitudes son iguales a la cantidad de clientes.
 COMENTARIO2
 
 ###################
@@ -55,18 +52,22 @@ COMENTARIO2
 
 
 
+function linuxRandom () {
+
 ###############################################
 # Genero TIEMPO DE ATENCION o DE SERVICIO [1,6]
 ###############################################
 
+
 for ((j=0;j < $cliente; j++))
 do
-	tiempoAtencion=$((1 + RANDOM%(6-1+1)))	
-	Serv[$j]=$tiempoAtencion
+    tiempoAtencion=$((1 + RANDOM%(6-1+1)))  
+    Serv[$j]=$tiempoAtencion
 
 done
 
 echo "Vector aleatorio de tiempos de servicio" ${Serv[*]}
+
 
 
 ###############################################
@@ -84,6 +85,84 @@ done
 Lleg[0]=0
 
 echo "Vector aleatorio de tiempos de llegada" ${Lleg[*]};
+
+}
+
+#################################
+#################################
+#Funcion randomOrg (REAL RANDOM)
+#################################
+#################################
+<<COMENTARIO3
+    genera los numeros aleatorios conectandose al sitio www.random.org. 
+    estos numeros son ALEATORIOS, generados por fenomenos de la naturaleza
+COMENTARIO3
+
+
+function randomOrg () {
+
+###############################################
+# Genero TIEMPO DE ATENCION o DE SERVICIO [1,6]
+###############################################
+
+
+    #Serv=($(curl -s "http://www.random.org/integers/?num=${cliente}&min=1&max=6&col=1&base=10&format=plain&rnd=new"))  
+    Serv=($(wget -qO- "http://www.random.org/integers/?num=${cliente}&min=1&max=6&col=1&base=10&format=plain&rnd=new"))
+
+echo "Vector aleatorio de tiempos de servicio (REAL RANDOM!!!!!!)" ${Serv[*]}
+
+
+
+###############################################
+# Genero TIEMPO DESDE LA ULTIMA LLEGADA [1,10]
+###############################################
+
+         #Lleg=($(curl -s "http://www.random.org/integers/?num=${cliente}&min=1&max=10&col=1&base=10&format=plain&rnd=new"))
+         Lleg=($(wget -qO- "http://www.random.org/integers/?num=${cliente}&min=1&max=10&col=1&base=10&format=plain&rnd=new"))
+
+# A continuacion, indico que el primer elemento del vector sea 0 (el primer cliente no tiene tiempo de ultima llegada)
+
+Lleg[0]=0
+
+echo "Vector aleatorio de tiempos de llegada (REAL RANDOM!!!!!!)" ${Lleg[*]};
+
+
+}
+
+
+
+#Comienzo a escribir el código
+
+
+####################
+# Ingreso CLIENTES
+####################
+
+echo -n "Ingrese la cantidad de clientes que sea utilizar en la simulacion: ";
+read cliente
+
+#################################
+# Selección de tipo de numero
+#################################
+
+
+        echo "Seleccione una opcion para generar numeros: "
+        echo "1. Pseudoaleatorios"
+        echo "2. Aleatorios (www.random.org)"
+        echo "3. Salir"
+        echo -n "opcion: "
+
+        read opcion
+        case $opcion in
+            1) linuxRandom;;
+            2) randomOrg;;
+            3) exit;;
+            *) echo "Opcion Incorrecta";;
+        esac
+
+
+
+
 
  
 ###############################################
@@ -132,7 +211,7 @@ echo "scale=2; $esperaTotal/$cantidadDeClientes" | bc
 
 <<COMENTARIO
 ####ACLARACION#######
-# Aqui te utiliza la aplicacion "bc" (bash calculator) porque en
+# Aqui se utiliza la aplicacion "bc" (bash calculator) porque en el
 interprete de comandos bash de linux no es posible realizar
 divisiones de floating-point
 
