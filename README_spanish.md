@@ -240,3 +240,16 @@ Para ejecutar el script basta con otorgarle permisos de ejecución haciendo<br>
 <code>chmod +x queueTheorySimulation.sh</code>
 
 Luego introducir la cantidad de clientes que se desean utilizar en la simulación, llamemosla n, Se generaran dos arrays con n enteros aleatorios normalmente distribuidos cada uno. El primero con valores [1..10] y el segundo con valores [1..6].  
+
+<h3>Números Aleatorios</h3>
+
+He creado un menú que permite seleccionar de que forma de generaran los números aleatorios,
+<ol>
+<li>Números Pseudoaleatorios generados por el Generador de números aleatorios de linux (Está era la única forma de generar los números en la versión anterior del script)
+<li>Números Aleatorios
+Estos números son obtenidos del proyecto <link>http://www.random.org/</link>. RANDOM.ORG ofrece números aleatorios de forma gratuita. Los números son extraídos del ruido atmosférico.
+</ol>
+
+El detalle de la implementación de la interfaz HTTP para obtener los números (en el caso particular de este script es un simple HTTP GET) <link>http://www.random.org/analysis/</link> 
+<br>
+Para conocer el análisis que se hizo para verficar que los números son genuinamente aleatorios <link>http://www.random.org/analysis/</link>
