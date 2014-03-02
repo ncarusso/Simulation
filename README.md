@@ -22,6 +22,218 @@ In brief, we are looking for:
 
 </ul>
 
+<table>
+<tr>
+<td>Customer</td>
+  <td>Time Since Last Arrival (min)</td>
+  <td>Service Time (min)</td>
+  <td>Arrival Clock Time</td>
+  <td>Service Begins</td>
+  <td>Service Ends</td>
+  <td>Customer Wait (min)</td>
+  <td>Clerk idle (min)</td>
+</tr>
+<tr>
+<td>1</td>
+  <td>-</td>
+  <td>1</td>
+  <td>0:00</td>
+  <td>0:00</td>
+  <td>0:01</td>
+  <td>1</td>
+  <td>0</td>
+</tr>
+<tr>
+<td>2</td>
+  <td>2</td>
+  <td>3</td>
+  <td>0:03</td>
+  <td>0:03</td>
+  <td>0:07</td>
+  <td>4</td>
+  <td>2</td>
+</tr>
+<tr>
+<td>3</td>
+  <td>7</td>
+  <td>4</td>
+  <td>0:10</td>
+  <td>0:10</td>
+  <td>0:14</td>
+  <td>4</td>
+  <td>3</td>
+</tr>
+<tr>
+<td>4</td>
+  <td>3</td>
+  <td>2</td>
+  <td>0:13</td>
+  <td>0:14</td>
+  <td>0:16</td>
+  <td>3</td>
+  <td>0</td>
+</tr>
+<tr>
+<td>5</td>
+  <td>9</td>
+  <td>1</td>
+  <td>0:22</td>
+  <td>0:22</td>
+  <td>0:23</td>
+  <td>1</td>
+  <td>6</td>
+</tr>
+<tr>
+<td>6</td>
+  <td>10</td>
+  <td>5</td>
+  <td>0:32</td>
+  <td>0:32</td>
+  <td>0:37</td>
+  <td>5</td>
+  <td>9</td>
+</tr>
+<tr>
+<td>7</td>
+  <td>6</td>
+  <td>4</td>
+  <td>0:38</td>
+  <td>0:38</td>
+  <td>0:42</td>
+  <td>4</td>
+  <td>1</td>
+</tr>
+<td>8</td>
+  <td>8</td>
+  <td>6</td>
+  <td>0:46</td>
+  <td>0:46</td>
+  <td>0:52</td>
+  <td>6</td>
+  <td>4</td>
+</tr>
+<tr>
+<td>9</td>
+  <td>8</td>
+  <td>1</td>
+  <td>0:54</td>
+  <td>0:54</td>
+  <td>0:55</td>
+  <td>1</td>
+  <td>2</td>
+</tr>
+<tr>
+<td>10</td>
+  <td>8</td>
+  <td>3</td>
+  <td>1:02</td>
+  <td>1:02</td>
+  <td>1:05</td>
+  <td>3</td>
+  <td>7</td>
+</tr>
+<tr>
+<td>11</td>
+  <td>7</td>
+  <td>5</td>
+  <td>1:09</td>
+  <td>1:09</td>
+  <td>1:14</td>
+  <td>5</td>
+  <td>4</td>
+</tr>
+<td>12</td>
+  <td>3</td>
+  <td>5</td>
+  <td>1:12</td>
+  <td>1:14</td>
+  <td>1:19</td>
+  <td>7</td>
+  <td>0</td>
+</tr>
+<tr>
+<td>13</td>
+  <td>8</td>
+  <td>3</td>
+  <td>1:20</td>
+  <td>1:20</td>
+  <td>1:23</td>
+  <td>3</td>
+  <td>1</td>
+</tr>
+<tr>
+<td>14</td>
+  <td>4</td>
+  <td>6</td>
+  <td>1:24</td>
+  <td>1:24</td>
+  <td>1:30</td>
+  <td>6</td>
+  <td>1</td>
+</tr>
+<tr>
+<td>15</td>
+  <td>4</td>
+  <td>1</td>
+  <td>1:28</td>
+  <td>1:30</td>
+  <td>1:31</td>
+  <td>3</td>
+  <td>0</td>
+</tr>
+<tr>
+<td>16</td>
+  <td>7</td>
+  <td>1</td>
+  <td>1:35</td>
+  <td>1:35</td>
+  <td>1:36</td>
+  <td>1</td>
+  <td>4</td>
+</tr>
+<tr>
+<td>17</td>
+  <td>1</td>
+  <td>6</td>
+  <td>1:36</td>
+  <td>1:36</td>
+  <td>1:42</td>
+  <td>6</td>
+  <td>0</td>
+</tr>
+<tr>
+<td>18</td>
+  <td>6</td>
+  <td>1</td>
+  <td>1:42</td>
+  <td>1:42</td>
+  <td>1:43</td>
+  <td>1</td>
+  <td>0</td>
+</tr>
+<tr>
+<td>19</td>
+  <td>7</td>
+  <td>2</td>
+  <td>1:49</td>
+  <td>1:49</td>
+  <td>1:51</td>
+  <td>2</td>
+  <td>6</td>
+</tr>
+<tr>
+<td>20</td>
+  <td>6</td>
+  <td>2</td>
+  <td>1:55</td>
+  <td>1:55</td>
+  <td>1:57</td>
+  <td>2</td>
+  <td>4</td>
+</tr>
+</table> 
+
+
 <h3>Solution</h3>
 
 I have only used the commands available in the BASH command interpreter in a linux debian system. 
