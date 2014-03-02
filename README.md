@@ -267,7 +267,7 @@ I have created a menu that presents two different options to generate the random
 I get these numbers from the project <link>http://www.random.org/</link>. RANDOM.ORG offers true random numbers to anyone on the Internet. The randomness comes from atmospheric noise.
 </ol>
 
-The details of the implementation of the HTTP interface (in my case just a HTTP GET)
+The details of the implementation of the HTTP interface (in my case, it's just a HTTP GET)
  <link>http://www.random.org/analysis/</link> 
 <br>
 To learn the analysis performed to RANDOM.ORG service to demonstrate that the generated numbers are truly random.
