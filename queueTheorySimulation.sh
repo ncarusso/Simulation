@@ -21,7 +21,7 @@ COMENTARIO1
 #"Anyone who attempts to generate random numbers by deterministic means is, of course,
 #living in a state of sin."
 #
-#--John von Neumann
+#--John von Neumann--
 #
 ####################################################################################
 ###################################################################################
