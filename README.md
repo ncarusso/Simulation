@@ -258,7 +258,7 @@ and then
 Finally, you need to enter the amount of customers to be used in the simulation, for instance, n.
 Two arrays with n random integers each will be generated. The first one is time between arrivals of the customers [1..10] and the second represents the time required to service each customer [1..6].
 
-<h3>True Random Numbers</h3>
+<h3>True Random Numbers (Update!)</h3>
 
 I have created a menu that presents two different options to generate the random numbers. 
 <ol>
