@@ -241,7 +241,7 @@ Para ejecutar el script basta con otorgarle permisos de ejecución haciendo<br>
 
 Luego introducir la cantidad de clientes que se desean utilizar en la simulación, llamemosla n, Se generaran dos arrays con n enteros aleatorios normalmente distribuidos cada uno. El primero con valores [1..10] y el segundo con valores [1..6].  
 
-<h3>Números Aleatorios</h3>
+<h3>Números Aleatorios (Actualización!)</h3>
 
 He creado un menú que permite seleccionar de que forma de generaran los números aleatorios,
 <ol>
